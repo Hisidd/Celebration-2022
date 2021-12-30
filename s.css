@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+
+section i{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 1px whitesmoke,
+                0 0 2px whitesmoke;
+    animation: animate linear infinite;
+    animation-delay: 1s;    
+}
+
+section i:nth-child(even){
+    border: 1px solid white;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0%);
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(2000%);
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(4000%);
+        opacity: 0;
+    }
+}

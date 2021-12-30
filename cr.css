@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Bungee Shade', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(moon-31665.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.year{
+    color: rgb(96, 96, 99);
+    font-size: 4em;
+    margin-top: -50px;
+    text-shadow: 5px 5px 1px #000;
+}
+@media screen and (max-width: 768px){
+    .year{
+        font-size: 3.5e;
+    }
+}
+.countdown{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.countdown div{
+    width: 180px;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 3em;
+    color: yellow;
+    background-color: rgb(19, 26, 19);
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff30;
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.4);
+    border-radius: 20px;
+}
+.countdown div h1{
+    font-size: 0.35em;
+}

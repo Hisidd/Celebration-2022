@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disable Enable time</title>
+    <link rel="stylesheet" href="ti.css">
+    <script>
+        function currentDate(){
+            var NYDate = new Date('01 January 2022 00:00'); 
+            var currentDate = new Date(); 
+            // console.log(currentDate);
+            // console.log(NYDate);
+            console.log(currentDate);
+            console.log(NYDate);
+            // console.log(currentDate == NYDate);
+            document.getElementById("showDate").innerHTML = currentDate;
+            if(currentDate >= NYDate){
+                document.getElementById("btn").disabled = false;
+            }else{
+                document.getElementById("btn").disabled = true;
+            }
+            console.log("disabled = "+document.getElementById("btn").disabled);
+        }
+        setInterval(currentDate, 1000);
+        function fun(){
+            alert("Wish you a Happy New Year 2022😍😍😍😍");
+        } 
+    </script>
+</head>
+<body>
+    <div class="Surprise">
+        <button id="btn" type="button" onclick="fun()">Surprise</button>
+        <p id="showDate" style="color: transparent;"></p>
+        <img src="gift.png" style="width: 96px; height: 80px; position: relative; margin-left: 641.25px; margin-bottom: -70.98px;">
+    </div>
+</body>
+</html>
