@@ -1,4 +1,4 @@
-var year_date = new Date('Jan 01, 2022 00:00:00');
+var year_date = new Date('Jan 16, 2022 00:00:00');
 function countdown(){
     var today = new Date()
     var gap = year_date - today
